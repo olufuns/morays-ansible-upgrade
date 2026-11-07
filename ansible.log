@@ -1,0 +1,722 @@
+2026-11-06 00:10:14,817 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:15,325 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:16,299 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:16,706 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:17,022 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:17,397 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:17,719 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:18,909 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:20,194 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:21,403 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:22,414 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:23,438 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:24,601 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:25,952 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:26,257 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:26,851 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:28,514 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:29,377 p=17526 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:10:30,239 p=17526 u=olufunso n=ansible | {
+    "_meta": {
+        "hostvars": {
+            "ec2-13-40-13-243.eu-west-2.compute.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2026-11-05T23:55:27+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-0d007986bee9fc147"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "2af686b8-8e12-7ca7-4d71-7056e194d933",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": "uefi",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::180437745975:instance-profile/morays-upgrade-instance-profile",
+                    "id": "AIPASUAXNQE34K32MSD4X"
+                },
+                "image_id": "ami-06cdac14c9c4da91b",
+                "instance_id": "i-08f7d76db40776571",
+                "instance_type": "t3.micro",
+                "key_name": "olu1",
+                "launch_time": "2026-11-05T23:55:27+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "ec2-13-40-13-243.eu-west-2.compute.amazonaws.com",
+                            "public_ip": "13.40.13.243"
+                        },
+                        "attachment": {
+                            "attach_time": "2026-11-05T23:55:26+00:00",
+                            "attachment_id": "eni-attach-005761f85c61e8363",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-058775303017f6181",
+                                "group_name": "morays-app-sg"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "02:ff:d0:64:4d:ab",
+                        "network_interface_id": "eni-016a2e658cef27a96",
+                        "owner_id": "180437745975",
+                        "private_dns_name": "ip-172-31-5-136.eu-west-2.compute.internal",
+                        "private_ip_address": "172.31.5.136",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-13-40-13-243.eu-west-2.compute.amazonaws.com",
+                                    "public_ip": "13.40.13.243"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-5-136.eu-west-2.compute.internal",
+                                "private_ip_address": "172.31.5.136"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-073d2ff1005a84fe5",
+                        "vpc_id": "vpc-0ea9b12ce1c86f529"
+                    }
+                ],
+                "owner_id": "180437745975",
+                "placement": {
+                    "availability_zone": "eu-west-2c",
+                    "group_name": "",
+                    "region": "eu-west-2",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-172-31-5-136.eu-west-2.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "172.31.5.136",
+                "product_codes": [],
+                "public_dns_name": "ec2-13-40-13-243.eu-west-2.compute.amazonaws.com",
+                "public_ip_address": "13.40.13.243",
+                "requester_id": "626974355284",
+                "reservation_id": "r-0d9291ed0adae39cf",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-058775303017f6181",
+                        "group_name": "morays-app-sg"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-073d2ff1005a84fe5",
+                "tags": {
+                    "aws:autoscaling:groupName": "terraform-aadb9fab8bcb1bdb6acfe10848",
+                    "aws:ec2launchtemplate:id": "lt-0e8a89f306da4edfb",
+                    "aws:ec2launchtemplate:version": "1"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2026-11-05T23:55:27+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-0ea9b12ce1c86f529"
+            },
+            "ec2-16-61-147-18.eu-west-2.compute.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2026-11-06T00:01:31+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-0f635e288fcb2de3e"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "e55686b8-a444-6aaf-888f-db3dedd3c4cb",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": "uefi",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::180437745975:instance-profile/morays-upgrade-instance-profile",
+                    "id": "AIPASUAXNQE34K32MSD4X"
+                },
+                "image_id": "ami-06cdac14c9c4da91b",
+                "instance_id": "i-0317f86aa707c3655",
+                "instance_type": "t3.micro",
+                "key_name": "olu1",
+                "launch_time": "2026-11-06T00:01:30+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "ec2-16-61-147-18.eu-west-2.compute.amazonaws.com",
+                            "public_ip": "16.61.147.18"
+                        },
+                        "attachment": {
+                            "attach_time": "2026-11-06T00:01:30+00:00",
+                            "attachment_id": "eni-attach-0a3c69fc805111ff8",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-058775303017f6181",
+                                "group_name": "morays-app-sg"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "0a:ff:f5:c7:d4:2b",
+                        "network_interface_id": "eni-0bfc7b403c1accea2",
+                        "owner_id": "180437745975",
+                        "private_dns_name": "ip-172-31-44-214.eu-west-2.compute.internal",
+                        "private_ip_address": "172.31.44.214",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-16-61-147-18.eu-west-2.compute.amazonaws.com",
+                                    "public_ip": "16.61.147.18"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-44-214.eu-west-2.compute.internal",
+                                "private_ip_address": "172.31.44.214"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-02dde43f7a40ea98c",
+                        "vpc_id": "vpc-0ea9b12ce1c86f529"
+                    }
+                ],
+                "owner_id": "180437745975",
+                "placement": {
+                    "availability_zone": "eu-west-2b",
+                    "group_name": "",
+                    "region": "eu-west-2",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-172-31-44-214.eu-west-2.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "172.31.44.214",
+                "product_codes": [],
+                "public_dns_name": "ec2-16-61-147-18.eu-west-2.compute.amazonaws.com",
+                "public_ip_address": "16.61.147.18",
+                "requester_id": "626974355284",
+                "reservation_id": "r-0c26082b413524a6c",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-058775303017f6181",
+                        "group_name": "morays-app-sg"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-02dde43f7a40ea98c",
+                "tags": {
+                    "aws:autoscaling:groupName": "terraform-aadb9fab8bcb1bdb6acfe10848",
+                    "aws:ec2launchtemplate:id": "lt-0e8a89f306da4edfb",
+                    "aws:ec2launchtemplate:version": "1"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2026-11-06T00:01:30+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-0ea9b12ce1c86f529"
+            },
+            "ec2-18-171-162-223.eu-west-2.compute.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2026-11-05T23:49:23+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-025fb7ceb3970dc3a"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "487686b8-77d7-63aa-cafd-7022f3593342",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": "uefi",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::180437745975:instance-profile/morays-upgrade-instance-profile",
+                    "id": "AIPASUAXNQE34K32MSD4X"
+                },
+                "image_id": "ami-06cdac14c9c4da91b",
+                "instance_id": "i-043a8c8f21c3c2a89",
+                "instance_type": "t3.micro",
+                "key_name": "olu1",
+                "launch_time": "2026-11-05T23:49:22+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "ec2-18-171-162-223.eu-west-2.compute.amazonaws.com",
+                            "public_ip": "18.171.162.223"
+                        },
+                        "attachment": {
+                            "attach_time": "2026-11-05T23:49:22+00:00",
+                            "attachment_id": "eni-attach-0b28dc7df1e4bf20d",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-058775303017f6181",
+                                "group_name": "morays-app-sg"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "06:ff:d9:6a:7b:45",
+                        "network_interface_id": "eni-080c559a43d4133d1",
+                        "owner_id": "180437745975",
+                        "private_dns_name": "ip-172-31-16-55.eu-west-2.compute.internal",
+                        "private_ip_address": "172.31.16.55",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-18-171-162-223.eu-west-2.compute.amazonaws.com",
+                                    "public_ip": "18.171.162.223"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-16-55.eu-west-2.compute.internal",
+                                "private_ip_address": "172.31.16.55"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-01efbe10fd62eb85e",
+                        "vpc_id": "vpc-0ea9b12ce1c86f529"
+                    }
+                ],
+                "owner_id": "180437745975",
+                "placement": {
+                    "availability_zone": "eu-west-2a",
+                    "group_name": "",
+                    "region": "eu-west-2",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-172-31-16-55.eu-west-2.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "172.31.16.55",
+                "product_codes": [],
+                "public_dns_name": "ec2-18-171-162-223.eu-west-2.compute.amazonaws.com",
+                "public_ip_address": "18.171.162.223",
+                "requester_id": "626974355284",
+                "reservation_id": "r-0a01f350f238ce0e7",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-058775303017f6181",
+                        "group_name": "morays-app-sg"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-01efbe10fd62eb85e",
+                "tags": {
+                    "aws:autoscaling:groupName": "terraform-aadb9fab8bcb1bdb6acfe10848",
+                    "aws:ec2launchtemplate:id": "lt-0e8a89f306da4edfb",
+                    "aws:ec2launchtemplate:version": "1"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2026-11-05T23:49:22+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-0ea9b12ce1c86f529"
+            },
+            "ec2-3-10-180-148.eu-west-2.compute.amazonaws.com": {
+                "ami_launch_index": 0,
+                "architecture": "x86_64",
+                "block_device_mappings": [
+                    {
+                        "device_name": "/dev/xvda",
+                        "ebs": {
+                            "attach_time": "2026-11-06T00:07:25+00:00",
+                            "delete_on_termination": true,
+                            "status": "attached",
+                            "volume_id": "vol-03a8965cf9df1ba08"
+                        }
+                    }
+                ],
+                "boot_mode": "uefi-preferred",
+                "capacity_reservation_specification": {
+                    "capacity_reservation_preference": "open"
+                },
+                "client_token": "db0686b8-b9e6-f27c-112c-a0dd7ee6c127",
+                "cpu_options": {
+                    "core_count": 1,
+                    "threads_per_core": 2
+                },
+                "current_instance_boot_mode": "uefi",
+                "ebs_optimized": false,
+                "ena_support": true,
+                "enclave_options": {
+                    "enabled": false
+                },
+                "hibernation_options": {
+                    "configured": false
+                },
+                "hypervisor": "xen",
+                "iam_instance_profile": {
+                    "arn": "arn:aws:iam::180437745975:instance-profile/morays-upgrade-instance-profile",
+                    "id": "AIPASUAXNQE34K32MSD4X"
+                },
+                "image_id": "ami-06cdac14c9c4da91b",
+                "instance_id": "i-02c5c788c3c7e4d1a",
+                "instance_type": "t3.micro",
+                "key_name": "olu1",
+                "launch_time": "2026-11-06T00:07:25+00:00",
+                "maintenance_options": {
+                    "auto_recovery": "default"
+                },
+                "metadata_options": {
+                    "http_endpoint": "enabled",
+                    "http_protocol_ipv6": "disabled",
+                    "http_put_response_hop_limit": 2,
+                    "http_tokens": "required",
+                    "instance_metadata_tags": "disabled",
+                    "state": "applied"
+                },
+                "monitoring": {
+                    "state": "disabled"
+                },
+                "network_interfaces": [
+                    {
+                        "association": {
+                            "ip_owner_id": "amazon",
+                            "public_dns_name": "ec2-3-10-180-148.eu-west-2.compute.amazonaws.com",
+                            "public_ip": "3.10.180.148"
+                        },
+                        "attachment": {
+                            "attach_time": "2026-11-06T00:07:25+00:00",
+                            "attachment_id": "eni-attach-072e60992a9ab2789",
+                            "delete_on_termination": true,
+                            "device_index": 0,
+                            "network_card_index": 0,
+                            "status": "attached"
+                        },
+                        "description": "",
+                        "groups": [
+                            {
+                                "group_id": "sg-058775303017f6181",
+                                "group_name": "morays-app-sg"
+                            }
+                        ],
+                        "interface_type": "interface",
+                        "ipv6_addresses": [],
+                        "mac_address": "06:ff:f5:4d:10:b5",
+                        "network_interface_id": "eni-0e54eef27bab4a695",
+                        "owner_id": "180437745975",
+                        "private_dns_name": "ip-172-31-23-164.eu-west-2.compute.internal",
+                        "private_ip_address": "172.31.23.164",
+                        "private_ip_addresses": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-3-10-180-148.eu-west-2.compute.amazonaws.com",
+                                    "public_ip": "3.10.180.148"
+                                },
+                                "primary": true,
+                                "private_dns_name": "ip-172-31-23-164.eu-west-2.compute.internal",
+                                "private_ip_address": "172.31.23.164"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "status": "in-use",
+                        "subnet_id": "subnet-01efbe10fd62eb85e",
+                        "vpc_id": "vpc-0ea9b12ce1c86f529"
+                    }
+                ],
+                "owner_id": "180437745975",
+                "placement": {
+                    "availability_zone": "eu-west-2a",
+                    "group_name": "",
+                    "region": "eu-west-2",
+                    "tenancy": "default"
+                },
+                "platform_details": "Linux/UNIX",
+                "private_dns_name": "ip-172-31-23-164.eu-west-2.compute.internal",
+                "private_dns_name_options": {
+                    "enable_resource_name_dns_a_record": false,
+                    "enable_resource_name_dns_aaaa_record": false,
+                    "hostname_type": "ip-name"
+                },
+                "private_ip_address": "172.31.23.164",
+                "product_codes": [],
+                "public_dns_name": "ec2-3-10-180-148.eu-west-2.compute.amazonaws.com",
+                "public_ip_address": "3.10.180.148",
+                "requester_id": "626974355284",
+                "reservation_id": "r-080324c86f49e8c37",
+                "root_device_name": "/dev/xvda",
+                "root_device_type": "ebs",
+                "security_groups": [
+                    {
+                        "group_id": "sg-058775303017f6181",
+                        "group_name": "morays-app-sg"
+                    }
+                ],
+                "source_dest_check": true,
+                "state": {
+                    "code": 16,
+                    "name": "running"
+                },
+                "state_transition_reason": "",
+                "subnet_id": "subnet-01efbe10fd62eb85e",
+                "tags": {
+                    "aws:autoscaling:groupName": "terraform-aadb9fab8bcb1bdb6acfe10848",
+                    "aws:ec2launchtemplate:id": "lt-0e8a89f306da4edfb",
+                    "aws:ec2launchtemplate:version": "1"
+                },
+                "usage_operation": "RunInstances",
+                "usage_operation_update_time": "2026-11-06T00:07:25+00:00",
+                "virtualization_type": "hvm",
+                "vpc_id": "vpc-0ea9b12ce1c86f529"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "aws_ec2"
+        ]
+    },
+    "aws_ec2": {
+        "hosts": [
+            "ec2-3-10-180-148.eu-west-2.compute.amazonaws.com",
+            "ec2-16-61-147-18.eu-west-2.compute.amazonaws.com",
+            "ec2-18-171-162-223.eu-west-2.compute.amazonaws.com",
+            "ec2-13-40-13-243.eu-west-2.compute.amazonaws.com"
+        ]
+    }
+}
+2026-11-06 00:11:04,299 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:04,543 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:05,488 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:05,885 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:06,180 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:06,480 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:06,741 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:07,953 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:09,223 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:10,428 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:11,369 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:12,371 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:13,536 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:14,865 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:15,147 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:15,700 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:16,322 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:17,151 p=17792 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:11:17,995 p=17792 u=olufunso n=ansible | @all:
+  |--@ungrouped:
+  |--@aws_ec2:
+  |  |--ec2-3-10-180-148.eu-west-2.compute.amazonaws.com
+  |  |--ec2-16-61-147-18.eu-west-2.compute.amazonaws.com
+  |  |--ec2-18-171-162-223.eu-west-2.compute.amazonaws.com
+  |  |--ec2-13-40-13-243.eu-west-2.compute.amazonaws.com
+2026-11-06 00:13:05,299 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:05,610 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:06,600 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:07,017 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:07,362 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:07,743 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:08,046 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:09,273 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:10,572 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:11,763 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:12,750 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:14,707 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:15,888 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:17,277 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:17,582 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:18,195 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:18,854 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:19,689 p=18282 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:13:20,545 p=18282 u=olufunso n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: webserver
+
+2026-11-06 00:13:20,545 p=18282 u=olufunso n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2026-11-06 00:41:15,471 p=23578 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:41:16,063 p=23578 u=olufunso n=ansible | @all:
+  |--@ungrouped:
+  |--@aws_ec2:
+  |  |--ec2-3-8-121-255.eu-west-2.compute.amazonaws.com
+  |  |--ec2-35-178-58-133.eu-west-2.compute.amazonaws.com
+  |  |--ec2-18-169-18-99.eu-west-2.compute.amazonaws.com
+  |  |--ec2-18-130-223-180.eu-west-2.compute.amazonaws.com
+  |--@webserver:
+  |  |--ec2-3-8-121-255.eu-west-2.compute.amazonaws.com
+  |  |--ec2-35-178-58-133.eu-west-2.compute.amazonaws.com
+  |  |--ec2-18-169-18-99.eu-west-2.compute.amazonaws.com
+  |  |--ec2-18-130-223-180.eu-west-2.compute.amazonaws.com
+2026-11-06 00:42:12,118 p=23770 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:42:23,640 p=23770 u=olufunso n=ansible | [WARNING]: Platform linux on host ec2-18-169-18-99.eu-west-2.compute.amazonaws.com is using the discovered Python
+interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of
+that path. See https://docs.ansible.com/ansible-core/2.16/reference_appendices/interpreter_discovery.html for more
+information.
+
+2026-11-06 00:42:23,642 p=23770 u=olufunso n=ansible | ec2-18-169-18-99.eu-west-2.compute.amazonaws.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.9"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2026-11-06 00:46:00,697 p=24688 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:46:01,352 p=24688 u=olufunso n=ansible | playbook: playbook.yml
+2026-11-06 00:46:55,512 p=24944 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:46:56,245 p=24944 u=olufunso n=ansible | PLAY [deploy morays application] **************************************************************************************
+2026-11-06 00:46:56,255 p=24944 u=olufunso n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2026-11-06 00:47:02,751 p=24944 u=olufunso n=ansible | fatal: [ec2-18-130-49-206.eu-west-2.compute.amazonaws.com]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '18.130.49.206' (ED25519) to the list of known hosts.\r\nno such identity: /home/olufunso/.ssh/lamtech.pem: No such file or directory\r\nec2-user@18.130.49.206: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).", "unreachable": true}
+2026-11-06 00:52:48,230 p=24944 u=olufunso n=ansible |  [ERROR]: User interrupted execution
+
+2026-11-06 00:53:06,318 p=26498 u=olufunso n=botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2026-11-06 00:53:06,992 p=26498 u=olufunso n=ansible | PLAY [deploy morays application] **************************************************************************************
+2026-11-06 00:53:07,008 p=26498 u=olufunso n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2026-11-06 00:53:09,276 p=26498 u=olufunso n=ansible | [WARNING]: Platform linux on host ec2-18-130-49-206.eu-west-2.compute.amazonaws.com is using the discovered Python
+interpreter at /usr/bin/python3.9, but future installation of another Python interpreter could change the meaning of
+that path. See https://docs.ansible.com/ansible-core/2.16/reference_appendices/interpreter_discovery.html for more
+information.
+
+2026-11-06 00:53:09,277 p=26498 u=olufunso n=ansible | ok: [ec2-18-130-49-206.eu-west-2.compute.amazonaws.com]
+2026-11-06 00:59:15,815 p=26498 u=olufunso n=ansible |  [ERROR]: User interrupted execution
+

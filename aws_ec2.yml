@@ -1,0 +1,18 @@
+---
+# Dynamic inventory for the separate morays-terraform-ha project.
+# These tags exactly match the Launch Template / Auto Scaling tags in
+# morays-terraform-ha (defaults: project_name=morays-ha, environment=dev).
+plugin: amazon.aws.aws_ec2
+regions:
+  - eu-west-2
+filters:
+  instance-state-name: running
+  "tag:Project": morays-ha
+  "tag:Environment": dev
+  "tag:Role": webserver
+groups:
+  webserver: "tags.Role | default('') == 'webserver'"
+compose:
+  # The learning Terraform project uses public IPs for direct SSH.
+  ansible_host: public_ip_address
+strict: false

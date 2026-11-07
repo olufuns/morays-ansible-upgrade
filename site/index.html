@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21135b">
+  <meta name="description" content="Morays Cloud DevOps Upgrade: a hands-on high-availability AWS portfolio project using Terraform, Amazon EC2, Ansible, Apache and an Application Load Balancer.">
+  <title>Morays | Cloud DevOps Upgrade</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" id="home">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Morays home"><span class="brand-cloud" aria-hidden="true">☁</span><strong>Morays</strong><span class="brand-divider" aria-hidden="true"></span><span class="brand-sub">Cloud DevOps</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links"><a class="nav-current" href="#home">⌂ Home</a><a href="#architecture">◇ Architecture</a><a href="#workflow">✣ Automation</a><a href="#about">◎ About</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-glow a" aria-hidden="true"></div><div class="hero-glow b" aria-hidden="true"></div><div class="hero-glow c" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow glass"><span class="live-dot"></span> TERRAFORM · AWS · ANSIBLE · APACHE</p>
+          <h1 id="hero-heading">Morays Cloud<br><span>DevOps Upgrade</span></h1>
+          <p class="hero-desc">A hands-on cloud deployment portfolio. Provision a highly available AWS environment with Terraform, configure it with Ansible, and publish this colourful website through Apache.</p>
+          <div class="hero-actions"><a href="#architecture" class="btn btn-light">↗ View Architecture</a><button type="button" class="btn btn-outline" data-open-dialog="status-dialog">◉ Deployment Status</button></div>
+          <p class="hero-proof"><span>✓</span> Real infrastructure as code <span class="proof-separator">•</span> Repeatable web deployment</p>
+        </div>
+        <div class="hero-illustration" aria-label="Illustration showing AWS cloud, Ansible, Terraform and Apache managing website servers" role="img">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+          <div class="cloud-shape"><span class="cloud-aws">aws</span><span class="cloud-smile"></span></div>
+          <div class="server-stack"><div class="server-rack"><i></i><i></i><b></b></div><div class="server-rack"><i></i><i></i><b></b></div><div class="server-rack"><i></i><i></i><b></b></div></div>
+          <div class="tech-badge terraform"><span>◇</span><small>Terraform</small></div><div class="tech-badge ansible"><span>Ⓐ</span><small>Ansible</small></div><div class="tech-badge apache"><span>🪶</span><small>Apache</small></div>
+          <span class="floor-shadow"></span><span class="ring-light"></span>
+        </div>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"></div>
+    </section>
+    <section class="section intro shell" id="components" aria-labelledby="components-heading">
+      <p class="section-kicker">WHAT POWERS THIS PROJECT</p>
+      <h2 id="components-heading">One platform. Four essential building blocks.</h2>
+      <p class="section-text">Choose a card to learn a little more about each component below.</p>
+      <div class="feature-grid">
+        <button class="feature-card card-blue" type="button" data-detail="infrastructure"><span class="feature-icon">⬡</span><h3>Infrastructure</h3><p>Terraform creates a dedicated VPC, public subnets, security groups, load balancer and EC2 instances.</p><span class="card-link">Explore infrastructure ↗</span></button>
+        <button class="feature-card card-lilac" type="button" data-detail="automation"><span class="feature-icon">⚙</span><h3>Automation</h3><p>Ansible discovers the instances, installs Apache, deploys the website and checks your site.</p><span class="card-link">Explore automation ↗</span></button>
+        <button class="feature-card card-green" type="button" data-detail="security"><span class="feature-icon">♢</span><h3>Security</h3><p>SSH is limited to your trusted IP; the web traffic reaches EC2 only from the load balancer.</p><span class="card-link">Explore security ↗</span></button>
+        <button class="feature-card card-peach" type="button" data-detail="deployment"><span class="feature-icon">▱</span><h3>Deployment Workflow</h3><p>Manage cloud resources as code and deliver updates consistently without manually editing the server.</p><span class="card-link">Explore workflow ↗</span></button>
+      </div>
+    </section>
+    <section class="architecture shell" id="architecture" aria-labelledby="arch-heading">
+      <div class="architecture-panel">
+        <div class="arch-top"><div><p class="section-kicker light-kicker">SOLUTION OVERVIEW</p><h2 id="arch-heading">◇ Project Architecture</h2><p>Five infrastructure tools link to build one simple, reproducible workflow.</p></div><button type="button" class="btn btn-glass" data-open-dialog="architecture-dialog">How the pieces connect ↗</button></div>
+        <div class="arch-flow" role="list" aria-label="Terraform provisions EC2; Ansible configures Apache to serve the Morays website">
+          <div class="arch-node arch-tf" role="listitem"><div class="arch-symbol">◇</div><strong>Terraform</strong><small>Provision VPC, network &amp; EC2</small></div><span class="flow-arrow" aria-hidden="true">➜</span>
+          <div class="arch-node arch-aws" role="listitem"><div class="arch-symbol">☁</div><strong>AWS EC2</strong><small>Run Linux web servers</small></div><span class="flow-arrow" aria-hidden="true">➜</span>
+          <div class="arch-node arch-an" role="listitem"><div class="arch-symbol">Ⓐ</div><strong>Ansible</strong><small>Configure &amp; deploy</small></div><span class="flow-arrow" aria-hidden="true">➜</span>
+          <div class="arch-node arch-ap" role="listitem"><div class="arch-symbol">🪶</div><strong>Apache</strong><small>Serve site on port 80</small></div><span class="flow-arrow" aria-hidden="true">➜</span>
+          <div class="arch-node arch-web" role="listitem"><div class="arch-symbol">▣</div><strong>Website</strong><small>Morays Upgrade</small></div>
+        </div>
+        <div class="arch-pills"><span>✧ Terraform</span><span>☁ AWS EC2</span><span>Ⓐ Ansible</span><span>🪶 Apache HTTPD</span><span>♡ High availability</span><span>⚙ DevOps portfolio</span></div>
+      </div>
+    </section>
+    <section class="section workflow shell" id="workflow" aria-labelledby="workflow-heading">
+      <p class="section-kicker">HOW IT WORKS</p><h2 id="workflow-heading">Built for reproducibility</h2><p class="section-text">Follow the process from your Ubuntu terminal to a website served from AWS.</p>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><h3>Write infrastructure code</h3><p>Create the VPC, subnet layout, security rules and EC2 resources from Terraform files.</p><code>terraform plan</code></article>
+        <article class="step-card"><span class="step-number">02</span><h3>Provision AWS resources</h3><p>Review and apply the changes, then obtain the Application Load Balancer DNS.</p><code>terraform apply</code></article>
+        <article class="step-card"><span class="step-number">03</span><h3>Configure your servers</h3><p>Use Ansible's dynamic inventory to install Apache and deploy these website files.</p><code>ansible-playbook</code></article>
+        <article class="step-card"><span class="step-number">04</span><h3>Publish the website</h3><p>Open the load balancer URL, verify HTTP response and confirm the target health.</p><code>HTTP 200 = served</code></article>
+      </div>
+    </section>
+    <section class="shell ending" id="about"><div><p class="section-kicker">LEARNING BY BUILDING</p><h2>From “Welcome to DevOps” to a real portfolio website.</h2><p>Deploy real application files, explore the infrastructure, and demonstrate Terraform and Ansible skills with a project you can improve over time.</p></div><button type="button" class="btn btn-purple" data-open-dialog="status-dialog">Check website response →</button></section>
+  </main>
+  <footer class="footer shell"><div><strong>Morays</strong> · Cloud DevOps Upgrade</div><p>Built using Terraform, AWS, Ansible &amp; Apache.</p></footer>
+  <dialog id="status-dialog" class="site-dialog" aria-labelledby="status-heading"><div class="dialog-head"><span class="dialog-icon">◉</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog">×</button></div><h2 id="status-heading">Website response check</h2><p>This checks whether the current web server or load balancer is serving the website. It does not measure every Auto Scaling target.</p><div class="status-box"><span class="status-indicator" id="status-light"></span><div><strong id="status-label">Not checked yet</strong><small id="status-detail">Select the button below to test /healthz</small></div></div><button class="btn btn-purple btn-block" type="button" id="run-health-check">Run website check</button></dialog>
+  <dialog id="architecture-dialog" class="site-dialog" aria-labelledby="arch-dialog-heading"><div class="dialog-head"><span class="dialog-icon">◇</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog">×</button></div><h2 id="arch-dialog-heading">How the pieces connect</h2><p>Terraform creates a VPC, two public subnets in different Availability Zones, an Application Load Balancer and an Auto Scaling Group. The initial group launches two Linux web servers.</p><p>Ansible identifies the EC2 instances by their AWS tags, connects to each server over SSH, installs Apache and copies this website into <code>/var/www/html/</code>.</p><p>The load balancer routes browser requests to the healthy instances. Newly launched replacement servers must also receive the configuration through a separate automated bootstrap process.</p></dialog>
+  <dialog id="detail-dialog" class="site-dialog" aria-labelledby="detail-heading"><div class="dialog-head"><span class="dialog-icon" id="detail-icon">◇</span><button type="button" class="dialog-close" data-close-dialog aria-label="Close dialog">×</button></div><h2 id="detail-heading">Component details</h2><p id="detail-content"></p></dialog>
+</body>
+</html>

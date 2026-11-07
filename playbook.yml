@@ -1,0 +1,92 @@
+---
+- name: Deploy Morays Cloud DevOps website onto Terraform EC2 servers
+  hosts: webserver
+  become: true
+  gather_facts: true
+  # Update one server at a time to reduce downtime while other servers serve traffic.
+  serial: 1
+
+  vars:
+    web_root: /var/www/html
+
+  tasks:
+    - name: Install Apache HTTP Server on Amazon Linux 2023
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+
+    - name: Start Apache now and whenever the server restarts
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
+
+    - name: Ensure Apache website directory exists
+      ansible.builtin.file:
+        path: "{{ web_root }}"
+        state: directory
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Ensure assets directory exists
+      ansible.builtin.file:
+        path: "{{ web_root }}/assets"
+        state: directory
+        owner: root
+        group: root
+        mode: "0755"
+
+    - name: Deploy Morays homepage
+      ansible.builtin.copy:
+        src: site/index.html
+        dest: "{{ web_root }}/index.html"
+        owner: root
+        group: root
+        mode: "0644"
+
+    - name: Deploy colourful website styling
+      ansible.builtin.copy:
+        src: site/assets/style.css
+        dest: "{{ web_root }}/assets/style.css"
+        owner: root
+        group: root
+        mode: "0644"
+
+    - name: Deploy interactive website JavaScript
+      ansible.builtin.copy:
+        src: site/assets/app.js
+        dest: "{{ web_root }}/assets/app.js"
+        owner: root
+        group: root
+        mode: "0644"
+
+    - name: Create lightweight health endpoint
+      ansible.builtin.copy:
+        src: site/healthz
+        dest: "{{ web_root }}/healthz"
+        owner: root
+        group: root
+        mode: "0644"
+
+    - name: Wait for Apache to listen on HTTP port 80
+      ansible.builtin.wait_for:
+        host: 127.0.0.1
+        port: 80
+        timeout: 30
+
+    - name: Verify homepage is accessible on the instance
+      ansible.builtin.uri:
+        url: http://127.0.0.1/
+        method: GET
+        status_code: 200
+        return_content: true
+      register: homepage_check
+      changed_when: false
+
+    - name: Confirm the expected website was deployed
+      ansible.builtin.assert:
+        that:
+          - "'Morays Cloud DevOps Upgrade' in homepage_check.content"
+        success_msg: "Morays website is responding on {{ inventory_hostname }}"
+        fail_msg: "HTTP responded, but the expected Morays homepage was not found"
